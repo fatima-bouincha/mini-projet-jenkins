@@ -1,4 +1,4 @@
-Library('bouincha-shared-library')
+
 pipeline{
     environment{
         IMAGE_NAME = 'webapp'
@@ -47,7 +47,7 @@ pipeline{
         }
         stage("Deploy Review"){
             environment{
-                SERVER_IP = '44.201.169.90'
+                SERVER_IP = '54.205.219.59'
                 SERVER_USERNAME = 'ubuntu'
             }
             steps{
@@ -73,7 +73,7 @@ pipeline{
         }
         stage("Deploy staging"){
             environment{
-                SERVER_IP = '34.227.16.87'
+                SERVER_IP = '107.20.124.130'
                 SERVER_USERNAME = 'ubuntu'
             }
             steps{
@@ -98,7 +98,7 @@ pipeline{
         }
         stage("Deploy prod"){
             environment{
-                SERVER_IP = '13.218.70.5'
+                SERVER_IP = '18.206.163.9'
                 SERVER_USERNAME = 'ubuntu'
             }
             steps{
